@@ -1,3 +1,5 @@
+// DOM elements
+
 export function domElements() {
   return {
     $searchButton: document.querySelector('[data-submit]'),

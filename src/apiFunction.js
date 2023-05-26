@@ -1,8 +1,10 @@
 import WeatherAPIKEY from '/src/key.js';
 import { domElements } from '/src/domEl.js';
 
+// API key
 const key = new WeatherAPIKEY;
 
+// Async function to get weather
 export default async function getWeather(location) {
   try {
     const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key.getKey()}&q=${location}&days=3`, {mode: 'cors'})
@@ -24,7 +26,9 @@ export default async function getWeather(location) {
     domElements().$dayThreeTemp.innerHTML = data.forecast.forecastday[2].day.maxtemp_f.toFixed(0) + ' &deg;F <br>' + data.forecast.forecastday[2].day.maxtemp_c.toFixed(0) + ' &deg;C';
     domElements().$dayThreeImage.src = data.forecast.forecastday[2].day.condition.icon;
     domElements().$dayThreeForecast.textContent = data.forecast.forecastday[2].day.condition.text;
-  } catch {
-
+  } catch(error) {
+    domElements().$logo.textContent = error
+    domElements().$logo.style.display = 'block';
+    domElements().$container.style.display = 'none';
   }
 }
