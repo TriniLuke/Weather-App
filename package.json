@@ -21,6 +21,7 @@
   "homepage": "https://triniluke.github.io/Weather-App/",
   "devDependencies": {
     "css-loader": "^6.7.4",
+    "eslint": "^8.41.0",
     "gh-pages": "^5.0.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
