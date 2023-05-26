@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="bundle.js" type="module"></script>
+  <title>Get Weather</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo" data-logo>GET WEATHER</div>
+  </header>
+  <!-- options for location and degrees -->
+  <div class="options">
+    <form>
+      <input class="location" type="text" name="location" placeholder="Enter a Country, City or Zip" data-location>
+      <input type="submit" value="GO" data-submit>
+    </form>
+  </div>
+
+  <!-- weather display -->
+  <div class="container" data-container>
+    <div class="location-status">
+      <p class="city" data-weather-city></p>
+      <p class="country" data-weather-country></p>
+      <img src="" data-image-source>
+      <p class="condition" data-weather-status></p>
+    </div>
+
+    <hr>
+
+    <div class="temp">
+      <p class="temp-status">Currently</p>
+      <p class="deg-fahrenheit" data-fahrenheit></p>
+      <p class="deg-celcius" data-celcius></p>
+      <p class="temp-status">Feels Like</p>
+      <p class="deg-fahrenheit" data-feels-fahrenheit></p>
+      <p class="deg-celcius" data-feels-celcius></p>
+    </div>
+
+    <hr>
+
+    <div class="future-cast">
+      <p class="temp-status">Next 3 Days</p>
+      <div class="future-holder">
+        <p class="three-day" data-day-one></p>
+        <img src="" data-day-one-image>
+        <p class="future-temp" data-day-one-temp></p>
+      </div>
+      <div class="future-holder">
+        <p class="three-day" data-day-two></p>
+        <img src="" data-day-two-image>
+        <p class="future-temp" data-day-two-temp></p>
+      </div>
+      <div class="future-holder">
+        <p class="three-day" data-day-three></p>
+        <img src="" data-day-three-image>
+        <p class="future-temp" data-day-three-temp></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

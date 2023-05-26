@@ -1,0 +1,28 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TriniLuke/Weather-App.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TriniLuke/Weather-App/issues"
+  },
+  "homepage": "https://github.com/TriniLuke/Weather-App#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.4",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
