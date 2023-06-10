@@ -140,6 +140,12 @@ body {
       height: 100px;
     }
   }
+
+  .future-holder {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
 }
 
 /* mobile devices */
